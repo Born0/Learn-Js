@@ -1,4 +1,4 @@
-/*
+
 const name= 'John';
 const age= 26;
 //concat
@@ -35,75 +35,6 @@ fruits2.pop();
 console.log(fruits2);
 
 console.log(Array.isArray(fruits2));
-
-////////////-------------------Object Literals
-const person={
-    firstName:'John',
-    lastName:'Doe',
-    age:26,
-    hobbies:['music','movies'],
-    address:{
-        street:'50 Main st',
-        city:'Boston',
-        state:'MA'
-    }
-}
-//console.log(person);
-
-// console.log(person.firstName,person.lastName);
-// console.log(person.hobbies[1]);
-// console.log(person.address.city);
-
-const{firstName,lastName, address:{city}}=person;
-//console.log(firstName,lastName,city);
-person.email='person@email.com';
-console.log(person);   */
-
-/////////////-------------------Object arrays
-const todos=[
-    {
-        id:1,
-        text:'Take out trash',
-        isCompleted:true
-    },
-    {
-        id:2, 
-        text:'Meeting with boss',
-        isCompleted:true
-    },
-    {
-        id:3,   
-        text:'Dentist appt',
-        isCompleted:false
-    }
-];
-
-//console.log(todos);
-
-const todoJSON= JSON.stringify(todos);
-//console.log(todoJSON);
-
-////////////-------------Loops
-// for(let i=0;i< 10;i++)
-// {
-//     console.log(i);
-// }
-
-// let i=0;
-// while(i<10)
-// {
-//     console.log(i);
-//     i++;
-// }
-
-// for(let todo of todos)
-// {
-//     console.log(todo.text);
-// }
-
-todos.forEach(function(todo){
-    console.log(todo.text);
-});
 
 
 
